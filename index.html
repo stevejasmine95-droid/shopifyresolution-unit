@@ -6,6 +6,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Shopify Compliance & Growth — Advisor Dashboard</title>
 
+ <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://cdn.shopify.com/assets/images/logos/shopify-bag.png" />
+  
 <!-- Tailwind (utility helpers) + Font Awesome -->
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -453,8 +456,8 @@ h1, h2, h3, h4 {
       <div class="flex items-center gap-4">
         <img src="https://cdn.shopify.com/assets/images/logos/shopify-bag.png" alt="Shopify" class="h-10"/>
         <div>
-          <h1 class="text-2xl font-bold text-gray-900">Shopify Advisor</h1>
-          <p class="text-sm text-gray-600 font-medium">Helping merchants grow safely & profitably</p>
+          <h1 class="text-2xl font-bold text-gray-900">Shopify Advisor And Growth Specialist</h1>
+          <p class="text-sm text-gray-600 font-medium">Helping shopify merchants grow safely & profitably</p>
         </div>
       </div>
       <div class="status-shopify inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold pl-6"> 
@@ -463,46 +466,84 @@ h1, h2, h3, h4 {
     </div>
   </header>
 
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-    
-    <!-- Left Column - Shopify Card Style -->
-    <aside class="card p-6 space-y-6 h-fit">
-      <div class="text-center">
-        <!-- Profile Image -->
-        <div class="profile-professional w-20 h-20 mx-auto mb-4">
-          <img src="https://i.pinimg.com/736x/2f/53/58/2f535867ec2ea063d07e3c4148d18cf8.jpg" alt="Juan Manuel" class="w-full h-full object-cover rounded-full">
-        </div>
-        <h2 class="text-xl font-bold text-gray-900">Juan Manuel<span class="inline-flex items-center">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5">
-    <path fill="#34B7F1" d="M12 2.25l2.317 1.178 2.567-.001 1.178 2.317 2.317 1.178-.001 2.567 1.178 2.317-1.178 2.317.001 2.567-2.317 1.178-1.178 2.317-2.567-.001L12 21.75l-2.317-1.178-2.567.001-1.178-2.317-2.317-1.178.001-2.567L2.25 12l1.178-2.317-.001-2.567 2.317-1.178L6.922 3.427l2.567.001L12 2.25z"/>
-    <path fill="#fff" d="M10.6 14.6l-2.2-2.2 1.1-1.1 1.1 1.1 4.4-4.4 1.1 1.1-5.5 5.5z"/>
-  </svg>
-</span>
-</h2>
-        <p class="text-sm text-gray-600 font-medium">Shopify Compliance & Growth Specialist</p>
-      </div>
+ <!-- Full-Screen Profile Card (Desktop Centered) -->
+<div class="w-full min-h-screen flex items-center justify-center bg-gray-50 px-6">
+  <aside class="relative w-full max-w-4xl p-8 rounded-2xl shadow-xl bg-white/90 backdrop-blur-md border border-gray-200 
+               hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ease-out space-y-6">
+    <!-- Floating Glow Effect -->
+    <div class="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-green-200 via-transparent to-blue-200 opacity-0 hover:opacity-70 blur-2xl transition duration-700"></div>
 
-      <p class="text-sm text-gray-700 leading-relaxed text-center">
-        We help Shopify store owners resolve compliance challenges and unlock growth with tailored marketing, SEO, and performance optimization strategies. Share your case to get started
-      </p>
-
-      <div class="space-y-3">
-        <button id="waOpenBtn" class="w-full inline-flex items-center justify-center gap-3 btn-shopify py-3 rounded-lg focus-ring font-semibold">
-          <i class="fa-brands fa-whatsapp"></i><span>Contact via WhatsApp</span>
-        </button>
-        <button onclick="openForm('telegram')" class="w-full inline-flex items-center justify-center gap-3 btn-wix py-3 rounded-lg focus-ring font-semibold">
-          <i class="fa-brands fa-telegram"></i><span>Contact via Telegram</span>
-        </button>
-        <button onclick="openForm('email')" class="w-full inline-flex items-center justify-center gap-3 bg-gray-900 hover:bg-gray-800 text-white py-3 rounded-lg focus-ring font-semibold transition-all duration-200">
-          <i class="fa-solid fa-envelope"></i><span>Contact via Email</span>
-        </button>
+    <!-- Profile -->
+    <div class="text-center animate-fadeIn">
+      <div class="w-24 h-24 mx-auto mb-4 relative">
+        <img src="https://i.pinimg.com/736x/2f/53/58/2f535867ec2ea063d07e3c4148d18cf8.jpg" 
+             alt="Juan Manuel" 
+             class="w-full h-full object-cover rounded-full border-4 border-white shadow-md">
+        <span class="absolute bottom-1 right-1 w-5 h-5 bg-green-500 border-2 border-white rounded-full animate-pulse"></span>
       </div>
+      <h2 class="text-2xl font-bold text-gray-900 flex items-center justify-center gap-2">
+        Juan Manuel
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6">
+          <path fill="#34B7F1" d="M12 2.25l2.317 1.178 2.567-.001 1.178 2.317 2.317 1.178-.001 2.567 1.178 2.317-1.178 2.317.001 2.567-2.317 1.178-1.178 2.317-2.567-.001L12 21.75l-2.317-1.178-2.567.001-1.178-2.317-2.317-1.178.001-2.567L2.25 12l1.178-2.317-.001-2.567 2.317-1.178L6.922 3.427l2.567.001L12 2.25z"/>
+          <path fill="#fff" d="M10.6 14.6l-2.2-2.2 1.1-1.1 1.1 1.1 4.4-4.4 1.1 1.1-5.5 5.5z"/>
+        </svg>
+      </h2>
+      <p class="text-sm text-gray-600 font-medium">Shopify Compliance & Growth Specialist</p>
+    </div>
 
-      <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
-        <h4 class="text-sm font-bold text-gray-900 mb-2">Advisor Stats</h4>
-        <div class="text-sm text-gray-700 font-medium">Expert • 5+ years • 378+ stores helped • Rating 4.9/5</div>
+    <!-- Bio -->
+    <p class="text-sm text-gray-700 leading-relaxed text-center max-w-2xl mx-auto animate-slideUp">
+       I partner with store owners to resolve compliance challenges and boost growth through targeted marketing, SEO, and performance optimization strategies. Share your case and take the first step.
+    </p>
+
+    <!-- Contact Buttons -->
+    <div class="space-y-3 max-w-md mx-auto">
+      <button id="waOpenBtn" class="relative w-full inline-flex items-center justify-center gap-3 py-3 rounded-lg font-semibold
+                   bg-gradient-to-r from-green-500 to-green-600 text-white shadow-lg hover:shadow-xl overflow-hidden group">
+        <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></span>
+        <i class="fa-brands fa-whatsapp"></i><span>Contact via WhatsApp</span>
+      </button>
+
+      <button onclick="openForm('telegram')" class="relative w-full inline-flex items-center justify-center gap-3 py-3 rounded-lg font-semibold
+                   bg-gradient-to-r from-sky-400 to-sky-600 text-white shadow-lg hover:shadow-xl overflow-hidden group">
+        <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></span>
+        <i class="fa-brands fa-telegram"></i><span>Contact via Telegram</span>
+      </button>
+
+
+
+    <!-- Stats -->
+    <div class="bg-white/70 backdrop-blur-md p-4 rounded-xl border border-gray-200 shadow-sm animate-fadeIn delay-200 text-center">
+      <h4 class="text-sm font-bold text-gray-900 mb-2">Advisor Stats</h4>
+      <div class="text-sm text-gray-700 font-medium">
+        ⭐ Expert • 5+ years • 300+ stores helped • Rating 4.9/5
       </div>
-    </aside>
+    </div>
+  </aside>
+</div>
+
+<!-- Animations -->
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fadeIn { animation: fadeIn 0.8s ease forwards; }
+  .animate-slideUp { animation: slideUp 0.9s ease forwards; }
+  .delay-200 { animation-delay: 0.2s; }
+</style>
+ <!-- Premium Ticker with Pro Slideshow + Captions -->
+<section class="ticker-section">
+  <!-- Ticker text -->
+  <div class="ticker-wrapper">
+    <div class="ticker">
+      🚀 Boost your Shopify store performance! • ⚡ Resolve compliance issues instantly! • 📈 Increase your SEO visibility and sales! • 💡 Expert marketing guidance!
+    </div>
+  </div>
 
       </div>
       <div class="hero-gallery__main-image">
@@ -514,45 +555,127 @@ h1, h2, h3, h4 {
 <!-- End Hero Gallery -->
 
 
+<!-- Right Column -->
+<section class="lg:col-span-2 space-y-20">
 
-    <!-- Right Column -->
-    <section class="lg:col-span-2 space-y-6">
+  <!-- 🌟 Premium Shopify Services -->
+  <div class="relative bg-gradient-to-br from-white via-white/95 to-gray-50 backdrop-blur-xl rounded-3xl shadow-2xl border border-gray-200 p-14 overflow-hidden">
+
+    <!-- Glowing Background Orbs -->
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-green-400/20 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl animate-pulse"></div>
+
+    <!-- Heading -->
+    <div class="relative z-10 text-center mb-16" data-aos="fade-up">
+      <h3 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight drop-shadow-sm">
+        🌟 Premium Shopify Services
+      </h3>
+      <p class="mt-6 text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+        Designed for <span class="text-green-600 font-semibold">serious store owners</span> — we provide solutions that protect, scale, and future-proof your business.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10">
       
-      <!-- Services Section - Shopify Style -->
-      <div class="card p-8">
-        <h3 class="shopify-heading text-2xl mb-6">Services & Benefits</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 services-grid">
-          <div class="service-shopify">
-            <div class="service-icon-shopify">
-              <i class="fa-solid fa-shield-halved text-xl"></i>
-            </div>
-            <h4 class="font-bold text-lg mb-2 text-gray-900">Compliance & Security</h4>
-            <p class="text-sm text-gray-600 leading-relaxed">Protect your store and payments with expert guidance.</p>
+      <!-- Service Card -->
+      <div data-aos="fade-up" data-aos-delay="100"
+           class="group relative rounded-2xl p-8 border border-gray-100 bg-white shadow-md hover:shadow-green-200/60 transition-all duration-500 hover:-translate-y-1">
+        <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-green-400/20 via-transparent to-emerald-500/20 opacity-0 group-hover:opacity-100 blur-xl transition"></div>
+        <div class="relative">
+          <div class="flex items-center justify-center w-16 h-16 mb-6 rounded-xl bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-shield-halved text-green-600 text-3xl"></i>
           </div>
-          <div class="service-shopify">
-            <div class="service-icon-shopify">
-              <i class="fa-solid fa-bullhorn text-xl"></i>
-            </div>
-            <h4 class="font-bold text-lg mb-2 text-gray-900">Marketing & Sales Growth</h4>
-            <p class="text-sm text-gray-600 leading-relaxed">Boost your revenue with tailored campaigns and strategies.</p>
-          </div>
-          <div class="service-shopify">
-            <div class="service-icon-shopify">
-              <i class="fa-solid fa-chart-line text-xl"></i>
-            </div>
-            <h4 class="font-bold text-lg mb-2 text-gray-900">SEO & Store Visibility</h4>
-            <p class="text-sm text-gray-600 leading-relaxed">Improve search ranking and attract more customers.</p>
-          </div>
-          <div class="service-shopify">
-            <div class="service-icon-shopify">
-              <i class="fa-solid fa-gear text-xl"></i>
-            </div>
-            <h4 class="font-bold text-lg mb-2 text-gray-900">Shopify Best Practices</h4>
-            <p class="text-sm text-gray-600 leading-relaxed">Optimize your store operations and performance for success.</p>
-          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-3">Compliance & Security</h4>
+          <p class="text-base text-gray-600 leading-relaxed">
+            <span class="font-medium">Fraud prevention, legal audits,</span> and enterprise-level safeguards to protect your store & customers.
+          </p>
         </div>
       </div>
 
+      <!-- Service Card -->
+      <div data-aos="fade-up" data-aos-delay="200"
+           class="group relative rounded-2xl p-8 border border-gray-100 bg-white shadow-md hover:shadow-green-200/60 transition-all duration-500 hover:-translate-y-1">
+        <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-green-400/20 via-transparent to-emerald-500/20 opacity-0 group-hover:opacity-100 blur-xl transition"></div>
+        <div class="relative">
+          <div class="flex items-center justify-center w-16 h-16 mb-6 rounded-xl bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-bullhorn text-green-600 text-3xl"></i>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-3">Marketing & Growth</h4>
+          <p class="text-base text-gray-600 leading-relaxed">
+            <span class="font-medium">Data-driven campaigns</span>, automation & customer retention strategies that boost sales sustainably.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div data-aos="fade-up" data-aos-delay="300"
+           class="group relative rounded-2xl p-8 border border-gray-100 bg-white shadow-md hover:shadow-green-200/60 transition-all duration-500 hover:-translate-y-1">
+        <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-green-400/20 via-transparent to-emerald-500/20 opacity-0 group-hover:opacity-100 blur-xl transition"></div>
+        <div class="relative">
+          <div class="flex items-center justify-center w-16 h-16 mb-6 rounded-xl bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-chart-line text-green-600 text-3xl"></i>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-3">SEO & Visibility</h4>
+          <p class="text-base text-gray-600 leading-relaxed">
+            Dominate search engines with <span class="font-medium">Shopify-specific SEO strategies</span> that attract qualified buyers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div data-aos="fade-up" data-aos-delay="400"
+           class="group relative rounded-2xl p-8 border border-gray-100 bg-white shadow-md hover:shadow-green-200/60 transition-all duration-500 hover:-translate-y-1">
+        <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-green-400/20 via-transparent to-emerald-500/20 opacity-0 group-hover:opacity-100 blur-xl transition"></div>
+        <div class="relative">
+          <div class="flex items-center justify-center w-16 h-16 mb-6 rounded-xl bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-gear text-green-600 text-3xl"></i>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-3">Shopify Optimization</h4>
+          <p class="text-base text-gray-600 leading-relaxed">
+            Implement <span class="font-medium">best practices</span> to enhance UX, improve conversions & streamline store operations.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="relative z-10 my-16 border-t border-gray-200"></div>
+
+    <!-- ✅ Metrics Section -->
+    <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10 text-center" data-aos="fade-up" data-aos-delay="500">
+      <div>
+        <h4 class="text-4xl font-extrabold text-gray-900 mb-2">+250</h4>
+        <p class="text-gray-600">Shopify Stores Optimized</p>
+      </div>
+      <div>
+        <h4 class="text-4xl font-extrabold text-green-600 mb-2">+40%</h4>
+        <p class="text-gray-600">Avg. Conversion Uplift</p>
+      </div>
+      <div>
+        <h4 class="text-4xl font-extrabold text-gray-900 mb-2">99.9%</h4>
+        <p class="text-gray-600">Platform Uptime & Reliability</p>
+      </div>
+    </div>
+
+
+
+    <!-- Divider -->
+    <div class="relative z-10 my-16 border-t border-gray-200"></div>
+
+    <!-- CTA -->
+    <div class="relative z-10 text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="700">
+      <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+        We combine <span class="text-green-600 font-semibold">strategy, technology, and creativity</span> to deliver results that matter.  
+        Not just quick fixes — but <span class="font-medium">long-term growth</span> for your Shopify store.
+      </p>
+      <a href="#contact" 
+         class="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-gradient-to-r from-green-600 to-emerald-500 text-white font-semibold text-lg shadow-lg hover:shadow-green-300/70 hover:scale-105 transition">
+        <i class="fa-solid fa-rocket-launch"></i> Start Your Growth Journey
+      </a>
+    </div>
+  </div>
+</section>
       <!-- Ticket Section -->
       <div class="card p-6">
         <div class="flex items-start justify-between">
@@ -597,38 +720,60 @@ h1, h2, h3, h4 {
         </div>
       </div>
 
-      <!-- Recent Merchant Success Stories -->
-      <div class="card p-8">
-        <h3 class="shopify-heading text-2xl mb-6">Recent Merchant Success Stories</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 stories-grid">
-          <div class="success-wix">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop" class="w-full h-40 object-cover" alt="conversion">
-            <div class="p-6">
-              <div class="success-metric">+30% conversion</div>
-              <p class="text-sm text-gray-600 leading-relaxed">Quick checkout fixes & trust badges boosted conversions by 30% in 2 weeks for a wellness brand.</p>
-            </div>
-          </div>
-          <div class="success-wix">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop" class="w-full h-40 object-cover" alt="seo">
-            <div class="p-6">
-              <div class="success-metric">+45% organic traffic</div>
-              <p class="text-sm text-gray-600 leading-relaxed">SEO audit + metadata improvements increased organic visits by 45% in 60 days for a home goods store.</p>
-            </div>
-          </div>
-          <div class="success-wix">
-            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop" class="w-full h-40 object-cover" alt="revenue">
-            <div class="p-6">
-              <div class="success-metric">+40% revenue</div>
-              <p class="text-sm text-gray-600 leading-relaxed">CRO & ad funnel optimization scaled revenue 40% quarter-over-quarter for a fashion merchant.</p>
-            </div>
-          </div>
-        </div>
+     <!-- Recent Merchant Success Stories -->
+<div class="card p-8">
+  <h3 class="shopify-heading text-2xl mb-6">Recent Merchant Success Stories</h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 stories-grid">
+
+    <!-- Success Story 1 -->
+    <div class="success-wix">
+      <video class="w-full h-40 object-cover rounded-lg" autoplay muted loop playsinline>
+        <source src="https://v1.pinimg.com/videos/mc/expMp4/d5/00/1f/d5001f1e9b700f8992c70aac15a2f245_t1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="p-6">
+        <div class="success-metric">+30% conversion</div>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Quick checkout fixes & trust badges boosted conversions by 30% in 2 weeks for a wellness brand.
+        </p>
       </div>
+    </div>
+
+    <!-- Success Story 2 -->
+    <div class="success-wix">
+      <video class="w-full h-40 object-cover rounded-lg" autoplay muted loop playsinline>
+        <source src="https://v1.pinimg.com/videos/mc/expMp4/2f/a5/71/2fa571d90cddf28fb4656dac4f26468f_t1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="p-6">
+        <div class="success-metric">+45% organic traffic</div>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          SEO audit + metadata improvements increased organic visits by 45% in 60 days for a home goods store.
+        </p>
+      </div>
+    </div>
+
+    <!-- Success Story 3 -->
+    <div class="success-wix">
+      <video class="w-full h-40 object-cover rounded-lg" autoplay muted loop playsinline>
+        <source src="https://v1.pinimg.com/videos/mc/expMp4/a4/d7/62/a4d762f9abc98aac436c0813e82773ec_t1.mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="p-6">
+        <div class="success-metric">+40% revenue</div>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          CRO & ad funnel optimization scaled revenue 40% quarter-over-quarter for a fashion merchant.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
 
       <!-- Case Study Section -->
       <section class="max-w-5xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6">
         <div class="success-wix p-6 flex flex-col gap-4">
-          <img src="https://i.pinimg.com/736x/6c/71/e8/6c71e84df436880b442e6598dc4a999e.jpg" alt="Conversion lift chart" class="w-full h-40 sm:h-32 object-cover rounded-xl" />
+          <img src="https://i.pinimg.com/1200x/06/e8/b8/06e8b809c600ba78eab41d151ce309cc.jpg" alt="Conversion lift chart" class="w-full h-40 sm:h-32 object-cover rounded-xl" />
           <div>
             <div class="success-metric text-lg">+30% Conversion Lift</div>
             <p class="text-sm text-gray-600 leading-relaxed">Quick checkout fixes & trust badges boosted conversions by 30% in 2 weeks.</p>
@@ -649,87 +794,202 @@ h1, h2, h3, h4 {
           </div>
         </div>
       </section>
+      
+  <title>Store Growth Services</title>
+  <script src="https://kit.fontawesome.com/your-fa-kit.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
 
-      <!-- Comprehensive Store Growth Services -->
-      <div class="card p-8">
-        <h3 class="shopify-heading text-2xl mb-4">Comprehensive Store Growth Services</h3>
-        <p class="text-base text-gray-700 mb-6 font-medium">Our certified specialist network provides end-to-end merchant support:</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <ul class="list-clean space-y-2">
-            <li class="flex items-center gap-3">
-              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                <i class="fa-solid fa-check text-green-600 text-xs"></i>
-              </div>
-              <span class="text-gray-800 font-medium">Store compliance audit & policy review</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                <i class="fa-solid fa-check text-green-600 text-xs"></i>
-              </div>
-              <span class="text-gray-800 font-medium">Technical SEO optimization & site speed improvements</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                <i class="fa-solid fa-check text-green-600 text-xs"></i>
-              </div>
-              <span class="text-gray-800 font-medium">Conversion rate optimization & A/B testing</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                <i class="fa-solid fa-check text-green-600 text-xs"></i>
-              </div>
-              <span class="text-gray-800 font-medium">Shopify Plus migration & custom development</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                <i class="fa-solid fa-check text-green-600 text-xs"></i>
-              </div>
-              <span class="text-gray-800 font-medium">Payment gateway optimization & fraud prevention</span>
-            </li>
-          </ul>
-          <ul class="list-clean space-y-2">
-            <li class="flex items-center gap-3">
-              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                <i class="fa-solid fa-check text-green-600 text-xs"></i>
-              </div>
-              <span class="text-gray-800 font-medium">Marketing automation & customer retention strategies</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                <i class="fa-solid fa-check text-green-600 text-xs"></i>
-              </div>
-              <span class="text-gray-800 font-medium">App integration & workflow optimization</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                <i class="fa-solid fa-check text-green-600 text-xs"></i>
-              </div>
-              <span class="text-gray-800 font-medium">Analytics setup & performance monitoring</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                <i class="fa-solid fa-check text-green-600 text-xs"></i>
-              </div>
-              <span class="text-gray-800 font-medium">Security headers & GDPR compliance implementation</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                <i class="fa-solid fa-check text-green-600 text-xs"></i>
-              </div>
-              <span class="text-gray-800 font-medium">24/7 merchant support & emergency response</span>
-            </li>
-          </ul>
+<!-- Services Section -->
+<section class="relative bg-gradient-to-b from-gray-900 via-gray-800 to-black py-20 px-6">
+  <div class="max-w-7xl mx-auto text-center">
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+      🚀 Accelerate Your Store Growth
+    </h2>
+    <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-14">
+      Partner with our <span class="text-green-400 font-semibold">Shopify-certified experts</span> to unlock 
+      traffic, conversions, and long-term scalability. Every service is designed to 
+      <span class="text-green-400 font-semibold">maximize revenue</span> and streamline your operations.
+    </p>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card -->
+      <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+        <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+          <i class="fa-solid fa-store text-green-400 text-xl"></i>
         </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Store Optimization</h3>
+        <p class="text-gray-400 mb-4">Streamline navigation, enhance speed & UX, and create a frictionless buying journey.</p>
+        <span class="block text-green-400 font-semibold mb-4">Starting at $299</span>
+        <button onclick="openModal('Store Optimization','Starting at $299')" 
+                class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+          Get Started
+        </button>
       </div>
 
-  <!-- Premium Ticker with Pro Slideshow + Captions -->
-<section class="ticker-section">
-  <!-- Ticker text -->
-  <div class="ticker-wrapper">
-    <div class="ticker">
-      🚀 Boost your Shopify store performance! • ⚡ Resolve compliance issues instantly! • 📈 Increase your SEO visibility and sales! • 💡 Expert marketing guidance!
+      <!-- Card -->
+      <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+        <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+          <i class="fa-solid fa-magnifying-glass-chart text-green-400 text-xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Advanced SEO</h3>
+        <p class="text-gray-400 mb-4">Technical audits, keyword strategies & backlinks to boost organic growth.</p>
+        <span class="block text-green-400 font-semibold mb-4">Starting at $399</span>
+        <button onclick="openModal('Advanced SEO','Starting at $399')" 
+                class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Card -->
+      <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+        <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+          <i class="fa-solid fa-chart-line text-green-400 text-xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">CRO & A/B Testing</h3>
+        <p class="text-gray-400 mb-4">Run data-driven experiments that increase conversions and customer retention.</p>
+        <span class="block text-green-400 font-semibold mb-4">Starting at $349</span>
+        <button onclick="openModal('CRO & A/B Testing','Starting at $349')" 
+                class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Card -->
+      <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+        <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+          <i class="fa-solid fa-bullhorn text-green-400 text-xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Growth Marketing</h3>
+        <p class="text-gray-400 mb-4">Leverage automation, loyalty flows & retargeting campaigns that scale sales.</p>
+        <span class="block text-green-400 font-semibold mb-4">Starting at $279</span>
+        <button onclick="openModal('Growth Marketing','Starting at $279')" 
+                class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Card -->
+      <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+        <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+          <i class="fa-solid fa-server text-green-400 text-xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Shopify Plus Migration</h3>
+        <p class="text-gray-400 mb-4">Enterprise-level migration with custom development & scalability features.</p>
+        <span class="block text-green-400 font-semibold mb-4">Starting at $599</span>
+        <button onclick="openModal('Shopify Plus Migration','Starting at $599')" 
+                class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Card -->
+      <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+        <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+          <i class="fa-solid fa-chart-pie text-green-400 text-xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Analytics & Reporting</h3>
+        <p class="text-gray-400 mb-4">Track KPIs with GA4, dashboards & custom insights for smarter decisions.</p>
+        <span class="block text-green-400 font-semibold mb-4">Starting at $199</span>
+        <button onclick="openModal('Analytics & Reporting','Starting at $199')" 
+                class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+          Get Started
+        </button>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-20">
+      <h3 class="text-2xl font-bold text-white mb-4">
+        Ready to scale your store to the next level?
+      </h3>
+      <p class="text-gray-300 mb-6">Book a free consultation with our Shopify growth specialists today.</p>
+      <a href="javascript:void(0)" onclick="openModal('Free Consultation','No cost')" 
+         class="inline-block px-8 py-4 bg-green-500 text-black font-bold rounded-full hover:bg-green-400 transition">
+        Book Free Consultation
+      </a>
     </div>
   </div>
+</section>
+
+<!-- Service Modal -->
+<div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-2xl shadow-lg w-full max-w-lg p-6 relative">
+    <!-- Close Button -->
+    <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800">✖</button>
+    <!-- Dynamic Title -->
+    <h2 id="modalServiceTitle" class="text-xl font-semibold mb-1 text-gray-800"></h2>
+    <p id="modalServicePrice" class="text-green-700 font-medium mb-4"></p>
+
+    <!-- Form -->
+    <form id="serviceForm" class="space-y-4">
+      <input type="hidden" id="serviceName" name="service">
+      <input type="hidden" id="servicePrice" name="price">
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="userName" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" required>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="userEmail" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" required>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea id="userMessage" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" rows="3"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+        Submit via WhatsApp
+      </button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Replace with your WhatsApp number (international format, no + or spaces)
+  const whatsappNumber = "2349135251130"; // Example: "15551234567"
+
+  // Open Modal with Service Info
+  function openModal(serviceName, servicePrice) {
+    document.getElementById("modalServiceTitle").innerText = serviceName;
+    document.getElementById("modalServicePrice").innerText = servicePrice;
+    document.getElementById("serviceName").value = serviceName;
+    document.getElementById("servicePrice").value = servicePrice;
+    document.getElementById("serviceModal").classList.remove("hidden");
+    document.getElementById("serviceModal").classList.add("flex");
+  }
+
+  // Close Modal
+  function closeModal() {
+    document.getElementById("serviceModal").classList.add("hidden");
+    document.getElementById("serviceModal").classList.remove("flex");
+  }
+
+  // Handle Form Submission
+  document.getElementById("serviceForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const service = document.getElementById("serviceName").value;
+    const price = document.getElementById("servicePrice").value;
+    const name = document.getElementById("userName").value;
+    const email = document.getElementById("userEmail").value;
+    const message = document.getElementById("userMessage").value;
+
+    const whatsappMessage = `Hello, I am interested in:\n\n📌 Service: ${service}\n💲 ${price}\n\n👤 Name: ${name}\n📧 Email: ${email}\n\n📝 Message: ${message}`;
+    
+    const url = `https://wa.me/2349135251130?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(url, "_blank");
+
+    closeModal();
+  });
+</script>
+
+
 
   <!-- Pro Fading Images with Captions -->
   <div class="fade-images">
@@ -791,6 +1051,188 @@ h1, h2, h3, h4 {
     </div>
   </div>
 </section>
+
+   <!-- Premium Horizontal Merchant Reviews -->
+<section class="relative bg-gray-50 py-16 px-6">
+  <!-- Background Glow -->
+  <div class="absolute inset-0 bg-gradient-to-r from-green-500/5 via-transparent to-blue-500/5 blur-3xl"></div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+      Merchant Success Stories
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Review 1 -->
+      <div class="bg-white/90 backdrop-blur-lg rounded-2xl shadow-lg p-8 border border-gray-200 
+                  hover:shadow-2xl hover:-translate-y-2 transition duration-500 animate-fadeIn">
+        <div class="flex items-center gap-1 mb-4">
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-6">
+          “Juan guided us through a Shopify Plus migration with zero downtime. 
+          Our checkout experience is now faster, and revenue jumped 
+          <span class="font-semibold text-gray-900">40% in one quarter</span>. 
+          His team’s professionalism is unmatched.”
+        </p>
+        <div class="flex items-center gap-3">
+          <img src="https://i.pinimg.com/736x/74/51/21/74512116a58837c06d92abc54ed0c0c2.jpg" 
+               alt="Merchant" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow">
+          <div>
+            <h4 class="font-semibold text-gray-900">Daniel Carter</h4>
+            <p class="text-xs text-gray-500">CEO, Trendify Apparel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-white/90 backdrop-blur-lg rounded-2xl shadow-lg p-8 border border-gray-200 
+                  hover:shadow-2xl hover:-translate-y-2 transition duration-500 animate-fadeIn delay-200">
+        <div class="flex items-center gap-1 mb-4">
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-6">
+          “Thanks to Juan’s SEO and conversion strategies, our 
+          organic traffic grew by <span class="font-semibold text-gray-900">50%</span> 
+          and customer retention improved. The insights were actionable and results-driven.”
+        </p>
+        <div class="flex items-center gap-3">
+          <img src="https://i.pinimg.com/736x/60/14/8c/60148c47284685edb02a8c236a407845.jpg" 
+               alt="Merchant" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow">
+          <div>
+            <h4 class="font-semibold text-gray-900">Sophia Williams</h4>
+            <p class="text-xs text-gray-500">Founder, GlowWell Skincare</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="bg-white/90 backdrop-blur-lg rounded-2xl shadow-lg p-8 border border-gray-200 
+                  hover:shadow-2xl hover:-translate-y-2 transition duration-500 animate-fadeIn delay-400">
+        <div class="flex items-center gap-1 mb-4">
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-6">
+          “We struggled with compliance issues until Juan stepped in. 
+          Within weeks, our store was fully compliant, and we scaled ads 
+          safely — leading to a <span class="font-semibold text-gray-900">30% increase</span> 
+          in conversions. Truly a lifesaver.”
+        </p>
+        <div class="flex items-center gap-3">
+          <img src="https://i.pinimg.com/736x/82/a9/fc/82a9fcf87248a1dfda617fcbac7d2c48.jpg" 
+               alt="Merchant" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow">
+          <div>
+            <h4 class="font-semibold text-gray-900">Olivia Brown</h4>
+            <p class="text-xs text-gray-500">Co-founder, LuxeHome Decor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Video Testimonial Section -->
+    <div class="mt-20">
+      <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">
+        Watch a Merchant’s Journey
+      </h3>
+      <div class="flex justify-center">
+        <div class="w-full md:w-3/4 lg:w-2/3 aspect-video rounded-2xl overflow-hidden shadow-xl border border-gray-200 hover:scale-[1.02] transition duration-500">
+          <iframe 
+            class="w-full h-full"
+            src="https://v1.pinimg.com/videos/mc/expMp4/a4/d7/62/a4d762f9abc98aac436c0813e82773ec_t1.mp4" 
+            title="Merchant Success Story Video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+   <!-- Premium Wix-Style Footer (No Newsletter) -->
+<footer class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-300 pt-16 pb-10 px-6">
+  <!-- Glow Effect -->
+  <div class="absolute inset-0 bg-gradient-to-r from-green-500/10 via-transparent to-blue-500/10 blur-3xl"></div>
+
+  <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <!-- Brand -->
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center shadow-lg">
+          <span class="text-white font-bold text-lg">JM</span>
+        </div>
+        <h2 class="text-xl font-bold text-white">Juan Manuel</h2>
+      </div>
+      <p class="text-gray-400 text-sm leading-relaxed">
+        Helping Shopify merchants resolve compliance challenges and achieve sustainable growth with tailored strategies.
+      </p>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Services</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">Compliance & Audit</a></li>
+        <li><a href="#" class="hover:text-white transition">SEO Optimization</a></li>
+        <li><a href="#" class="hover:text-white transition">Conversion Optimization</a></li>
+        <li><a href="#" class="hover:text-white transition">Custom Development</a></li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Company</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="border-t border-gray-700 mt-10 pt-6 relative z-10 flex flex-col md:flex-row justify-between items-center gap-4">
+    <!-- Social Icons -->
+    <div class="flex gap-4">
+      <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-green-500 transition">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-sky-400 transition">
+        <i class="fa-brands fa-X"></i>
+      </a>
+      <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-pink-500 transition">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600 transition">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <!-- Legal -->
+    <div class="text-xs text-gray-500 text-center md:text-right">
+      © 2025 Juan Manuel. All rights reserved. | 
+      <a href="#" class="hover:text-gray-300">Terms</a> · 
+      <a href="#" class="hover:text-gray-300">Privacy</a>
+    </div>
+  </div>
+</footer>
+
 
 <style>
 /* Layout wrapper */
@@ -1085,7 +1527,7 @@ function handleSubmit(e){
     'Message: ' + message
   );
 
-  if(method==='whatsapp') url='https://wa.me/2349135251130?text=' + body;
+  if(method==='whatsapp') url='https://wa.me/2347037809209?text=' + body;
   else if(method==='telegram') url='https://t.me/JuanShopifyadvisor'; // <- TELEGRAM LINK
   else if(method==='email') url='mailto:juan.shopifyagent@gmail.com?subject=Support Request&body=' + body;
 
@@ -1095,5 +1537,18 @@ function handleSubmit(e){
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
